@@ -1,0 +1,14 @@
+LIBRO|El Quijote|Miguel de Cervantes|1605|disponible
+LIBRO|Orgullo y Prejuicio|Jane Austen|1813|disponible
+LIBRO|Cien Años de Soledad|Gabriel García Márquez|1967|prestado
+LIBRO|Harry Potter y la Piedra Filosofal|J.K. Rowling|1997|disponible
+LIBRO|El Señor de los Anillos|J.R.R. Tolkien|1954|prestado
+LIBRO|Crónica de una Muerte Anunciada|Gabriel García Márquez|1981|disponible
+LIBRO|1984|George Orwell|1949|prestado
+LIBRO|Los Juegos del Hambre|Suzanne Collins|2008|disponible
+LIBRO|La Sombra del Viento|Carlos Ruiz Zafón|2001|disponible
+DIGITAL|El Principito|Antoine de Saint-Exupéry|1943|disponible|PDF
+DIGITAL|Drácula|Bram Stoker|1897|prestado|ePub
+DIGITAL|Sherlock Holmes: Estudio en Escarlata|Arthur Conan Doyle|1887|disponible|MOBI
+DIGITAL|El Alquimista|Paulo Coelho|1988|disponible|PDF
+DIGITAL|Fahrenheit 451|Ray Bradbury|1953|prestado|ePub
