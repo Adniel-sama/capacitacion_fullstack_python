@@ -2,7 +2,7 @@
     
 #### **Curso Desarrollo de Aplicaciones Web Full Stack Python Trainee**
     
-**Competencia del Plan Formativo:** Desarrollar aplicaciones web Full Stack utilizando tecnología Python que den solución a las necesidades de la organización, y aplicando las buenas prácticas de la industria para obtener un producto con niveles de calidad requeridos.   ___________________________________________________________________________________________________________________________________________________________
+**Competencia del Plan Formativo:** Desarrollar aplicaciones web Full Stack utilizando tecnología Python que den solución a las necesidades de la organización, y aplicando las buenas prácticas de la industria para obtener un producto con niveles de calidad requeridos.   
 
 Actividades: 9
     
