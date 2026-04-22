@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Amenazas — Ciberseguridad</title>
+
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <header class="bg-dark text-white">
+    <nav class="container navbar navbar-expand-md navbar-dark">
+      <a class="navbar-brand" href="index.html">Ciberseguridad</a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navMenu2">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navMenu2">
+        <ul class="navbar-nav ms-auto">
+          <li class="nav-item"><a class="nav-link" href="index.html">Inicio</a></li>
+          <li class="nav-item"><a class="nav-link active" href="informacion.html">Amenazas</a></li>
+          <li class="nav-item"><a class="nav-link" href="consejos.html">Consejos</a></li>
+        </ul>
+      </div>
+    </nav>
+  </header>
+
+  <main class="container my-4">
+    <h1>Amenazas comunes</h1>
+    <p class="mb-4">Descripción breve de ataques y cómo reconocerlos.</p>
+
+    <section class="row g-3">
+      <!-- Tarjetas interactivas -->
+      <div class="col-md-6">
+        <div class="card h-100" data-bs-toggle="collapse" data-bs-target="#phishingDesc" style="cursor:pointer">
+          <div class="card-body">
+            <h5 class="card-title">Phishing</h5>
+            <p class="card-text">Intentos de engaño para robar credenciales o datos personales.</p>
+          </div>
+          <div id="phishingDesc" class="collapse card-footer">
+            <small>Ejemplo: correo falso que imita a tu banco pidiendo "verificar cuenta". Señales: errores ortográficos, URLs que no coinciden y peticiones urgentes.</small>
+          </div>
+        </div>
+      </div>
+
+      <div class="col-md-6">
+        <div class="card h-100" data-bs-toggle="collapse" data-bs-target="#ransomDesc" style="cursor:pointer">
+          <div class="card-body">
+            <h5 class="card-title">Ransomware</h5>
+            <p class="card-text">Software que cifra archivos y exige rescate para recuperarlos.</p>
+          </div>
+          <div id="ransomDesc" class="collapse card-footer">
+            <small>Ejemplo: infección por abrir un adjunto malicioso; prevención: respaldos frecuentes y no pagar rescates.</small>
+          </div>
+        </div>
+      </div>
+
+      <div class="col-md-6">
+        <div class="card h-100" data-bs-toggle="collapse" data-bs-target="#malwareDesc" style="cursor:pointer">
+          <div class="card-body">
+            <h5 class="card-title">Malware</h5>
+            <p class="card-text">Programas diseñados para dañar, espiar o robar información.</p>
+          </div>
+          <div id="malwareDesc" class="collapse card-footer">
+            <small>Ejemplo: troyanos que permiten control remoto. Prevención: antivirus actualizado y descargas solo de fuentes confiables.</small>
+          </div>
+        </div>
+      </div>
+
+      <div class="col-md-6">
+        <div class="card h-100" data-bs-toggle="collapse" data-bs-target="#ddosDesc" style="cursor:pointer">
+          <div class="card-body">
+            <h5 class="card-title">DDoS</h5>
+            <p class="card-text">Ataque que satura servidores para dejarlos inaccesibles.</p>
+          </div>
+          <div id="ddosDesc" class="collapse card-footer">
+            <small>Ejemplo: oleadas de tráfico falsas a un servicio online. Defensa: mitigación con servicios CDN y reglas de red.</small>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <hr class="my-4">
+
+    <h2>Casos reales (resumen)</h2>
+    <div class="accordion" id="casesAccordion">
+      <div class="accordion-item">
+        <h2 class="accordion-header" id="caseOne">
+          <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne">
+            Caso: WannaCry (ransomware)
+          </button>
+        </h2>
+        <div id="collapseOne" class="accordion-collapse collapse" data-bs-parent="#casesAccordion">
+          <div class="accordion-body">
+            En 2017, WannaCry afectó miles de sistemas aprovechando una vulnerabilidad en Windows. Lección: parchear sistemas y mantener respaldos.
+          </div>
+        </div>
+      </div>
+
+      <div class="accordion-item">
+        <h2 class="accordion-header" id="caseTwo">
+          <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwo">
+            Caso: phishing a usuarios
+          </button>
+        </h2>
+        <div id="collapseTwo" class="accordion-collapse collapse" data-bs-parent="#casesAccordion">
+          <div class="accordion-body">
+            Campañas que suplantan servicios populares para robar credenciales. Lección: verificar remitente y URL, habilitar 2FA.
+          </div>
+        </div>
+      </div>
+    </div>
+  </main>
+
+  <footer class="bg-light text-center py-3">
+    <small>&copy; Evaluación M2 </small>
+  </footer>
+
+  <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+  <script src="script/script.js"></script>
+</body>
+</html>
