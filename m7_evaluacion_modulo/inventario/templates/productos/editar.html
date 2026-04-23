@@ -1,0 +1,17 @@
+{% extends "base.html" %}
+{% block title %}Editar producto{% endblock %}
+
+{% block content %}
+<div class="container mt-4">
+    <h3>Editar producto</h3>
+
+    <form method="post" novalidate>
+        {% csrf_token %}
+        {{ form.as_p }}
+
+        <button type="submit" class="btn btn-dark">Guardar cambios</button>
+        <a href="{% url 'lista_productos' %}" class="btn btn-outline-secondary">Cancelar</a>
+    </form>
+</div>
+{% endblock %}
+
