@@ -1,0 +1,31 @@
+{% extends "base.html" %}
+
+{% block title %} Tareas {% endblock %}
+
+{% block content %}
+<div class="containter pt-5">
+    <h1>Listado de mis tareas</h1>
+    <table class="table table-stripped">
+        <thead>
+            <tr>
+                <th>Tarea</th>
+                <th>Estado</th>
+                <th>Acciones</th>
+            </tr>
+        </thead>
+        <body>
+             {% for tarea in tareas %}
+             <tr>
+                <td> {{ tarea.nombre }} </td>
+                <td> {{ tarea.estado }} </td>
+                <td>
+                    <a href="{% url "editar" tarea.nombre%}" class="btn btn-warning">Editar</a>
+                    <a href="{% url "detalle" tarea.nombre%}" class="btn btn-primary">Detalle</a>
+                    <a href="{% url 'borrar' tarea.nombre %}" class="btn btn-danger">Borrar</a>
+                </td>
+             </tr>
+            {% endfor %}
+        </body>
+    </table>
+</div>
+{% endblock %}

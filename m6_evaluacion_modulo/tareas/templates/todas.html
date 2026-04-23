@@ -1,0 +1,32 @@
+{% extends 'base.html' %}
+
+{% block title %}Mascotas{% endblock %}
+
+{% block content %}
+<div class="container pt-5">
+    <h1>Listado de TODAS las tareas</h1>
+    <table class="table table-striped">
+        <thead>
+            <tr>
+                <th>Tarea</th>
+                <th>Estado</th>
+                <th>Acciones</th>
+            </tr>
+        </thead>
+        <tbody>
+            <!-- Recorrer y mostrar todas las tareas -->
+            {% for tarea in tareas %}
+                <tr>
+                    <td>{{ tarea.nombre }}</td>
+                    <td>{{ tarea.estado }}</td>
+                    <td>
+                        <a href="{% url 'editar' tarea.nombre %}" class="btn btn-warning">Editar</a>
+                        <a href="{% url 'detalle' tarea.nombre %}" class="btn btn-primary">Detalle</a>
+                        <a href="{% url 'borrar' tarea.nombre %}" class="btn btn-danger">Borrar</a>
+                    </td>
+                </tr>
+            {% endfor %}
+        </tbody>
+    </table>
+</div>
+{% endblock %}
